@@ -98,6 +98,8 @@
             navUser.Size = new Size(242, 95);
             navUser.TabIndex = 0;
             navUser.Title = "admin";
+            navUser.Load += navUser_Load;
+            navUser.Click += navUser_Click;
             // 
             // navReport
             // 
