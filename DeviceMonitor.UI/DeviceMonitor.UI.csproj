@@ -1,0 +1,152 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\icons\logo.ico" />
+    <None Remove="Resources\images\baojingalarm.png" />
+    <None Remove="Resources\images\baojing_h.png" />
+    <None Remove="Resources\images\baojing_low.png" />
+    <None Remove="Resources\images\baojing_low1.png" />
+    <None Remove="Resources\images\dev01.png" />
+    <None Remove="Resources\images\dev02.png" />
+    <None Remove="Resources\images\humidity.png" />
+    <None Remove="Resources\images\liangdu.png" />
+    <None Remove="Resources\images\login.png" />
+    <None Remove="Resources\images\login_bg.png" />
+    <None Remove="Resources\images\mima.png" />
+    <None Remove="Resources\images\shebeijiance.png" />
+    <None Remove="Resources\images\shebeijiance1.png" />
+    <None Remove="Resources\images\shishiquxian.png" />
+    <None Remove="Resources\images\shishiquxian1.png" />
+    <None Remove="Resources\images\temperature.png" />
+    <None Remove="Resources\images\tongjibaobiao.png" />
+    <None Remove="Resources\images\tongjibaobiao1.png" />
+    <None Remove="Resources\images\xitongpeizhi.png" />
+    <None Remove="Resources\images\xitongpeizhi1.png" />
+    <None Remove="Resources\images\yujingguanli.png" />
+    <None Remove="Resources\images\yujingguanli1.png" />
+    <None Remove="Resources\images\zhanghao.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\icons\logo.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\images\baojingalarm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\baojing_h.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\baojing_low.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\baojing_low1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\dev01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\dev02.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\humidity.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\liangdu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\login.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\login_bg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\mima.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\shebeijiance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\shebeijiance1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\shishiquxian.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\shishiquxian1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\temperature.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\tongjibaobiao.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\tongjibaobiao1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\xitongpeizhi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\xitongpeizhi1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\yujingguanli.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\yujingguanli1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\images\zhanghao.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="config\" />
+    <Folder Include="controls\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Conmmon\Conmmon.csproj" />
+    <ProjectReference Include="..\DeviceMonitor.BLL\DeviceMonitor.BLL.csproj" />
+    <ProjectReference Include="..\DeviceMonitor.Models\DeviceMonitor.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NavItem">
+      <HintPath>..\Libs\NavItem.dll</HintPath>
+    </Reference>
+    <Reference Include="Zhaoxi.CustControls">
+      <HintPath>..\Libs\Zhaoxi.CustControls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

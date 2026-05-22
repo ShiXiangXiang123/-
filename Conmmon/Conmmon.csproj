@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NPinyin" Version="0.2.6321.26573" />
+    <PackageReference Include="NPOI" Version="2.8.0" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="8.0.2" />
+  </ItemGroup>
+
+</Project>

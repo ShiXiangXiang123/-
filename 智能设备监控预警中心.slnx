@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Conmmon/Conmmon.csproj" />
+  <Project Path="DeviceMonitor.BLL/DeviceMonitor.BLL.csproj" />
+  <Project Path="DeviceMonitor.DAL/DeviceMonitor.DAL.csproj" />
+  <Project Path="DeviceMonitor.Models/DeviceMonitor.Models.csproj" />
+  <Project Path="DeviceMonitor.UI/DeviceMonitor.UI.csproj" />
+</Solution>
